@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50528aee-12a9-40ce-bf18-a049a81d1d57" name="Default Changelist" comment="" />
+    <list default="true" id="50528aee-12a9-40ce-bf18-a049a81d1d57" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script_queue_manager/prescripts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script_queue_manager/executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/script_queue_manager/executor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JupyterTrust" id="5578465d-b4c8-46ac-995b-419cd2327c4a" />
   <component name="ProjectId" id="1aZRw5RgkXXDX804Q79rU1SwCXp" />
   <component name="ProjectViewState">
@@ -23,6 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -30,7 +40,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -45,6 +55,40 @@
       <recent name="C:\Users\mayan\script-queue-manager\script-queue-manager" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="pusher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="script-queue-manager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/script-queue-manager" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/script-queue-manager/pusher.py" />
+      <option name="PARAMETERS" value="-s &quot;This is a script to execute&quot;" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.pusher" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="windows-1252" />
+    <option name="myConnectionType" value="REMOTE_SDK" />
+    <option name="myConnectionId" value="sftp://ubuntu@ec2-13-233-146-99.ap-south-1.compute.amazonaws.com:22/home/ubuntu/anaconda3/envs/pytorch_p36/bin/python3.6" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -56,6 +100,8 @@
       <option name="presentableId" value="Default" />
       <updated>1586941364538</updated>
       <workItem from="1586941369498" duration="851000" />
+      <workItem from="1587027380456" duration="1558000" />
+      <workItem from="1587028955159" duration="6392000" />
     </task>
     <servers />
   </component>
@@ -63,18 +109,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="530" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586942206340">
+    <state x="361" y="71" key="#Deployment" timestamp="1587027660198">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="530" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1586942206340" />
-    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1586941434167">
+    <state x="361" y="71" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1587027660198" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587028759060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586941434167" />
-    <state x="277" y="55" key="SettingsEditor" timestamp="1586941961467">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1587028759060" />
+    <state x="530" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587032173151">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586941961467" />
+    <state x="530" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1587032173151" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1587027646085">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587027646085" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587028941455">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587028941455" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587028941454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587028941454" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587028941454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587028941454" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587028941455">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587028941455" />
+    <state x="277" y="55" key="SettingsEditor" timestamp="1587028929284">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587028929284" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587028955411">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587028955411" />
     <state x="510" y="143" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1586941831418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -83,5 +157,8 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="666" y="143" key="ftp.server.browser/0.0.1536.824@0.0.1536.824" timestamp="1586941859979" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/script_queue_manager$pusher.coverage" NAME="pusher Coverage Results" MODIFIED="1587028760388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script-queue-manager" />
   </component>
 </project>

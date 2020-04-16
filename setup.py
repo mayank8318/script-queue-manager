@@ -18,7 +18,8 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'sqm-pusher = script_queue_manager.pusher:pusher'
+            'sqm-pusher = script_queue_manager.pusher:pusher',
+            'sqm-executor = script_queue_manager.executor:executor'
         ]
     },
     classifiers=(
@@ -28,5 +29,6 @@ setup(
     ),
     keywords='script_queue_manager manage-tasks queue tasks python package mayank8318',
     install_requires=requirements,
-    zip_safe=False
+    zip_safe=False,
+    include_package_data=True
 )
