@@ -18,15 +18,9 @@ def executor():
     args = parser.parse_args()
 
     prescriptFile = args.prescript
-    file = pkgutil.get_data(__name__, "prescripts.txt").decode()
+    file = pkgutil.get_data(__name__, prescriptFile).decode()
 
     PRE_CMD = file
-
-    # for l in file:
-    #     print(l)
-    #     PRE_CMD += l + '\n'
-
-    # file.close()
 
     try:
         while True:
