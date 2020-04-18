@@ -1,5 +1,6 @@
 import argparse
 import pkgutil
+import subprocess
 import time
 from datetime import datetime
 from pathlib import Path
@@ -40,8 +41,11 @@ def executor():
             q = persistqueue.SQLiteQueue(os.path.join(home, 'script_queue'), auto_commit=True)
             if q.size > 0:
                 item = q.get()
-                CMD = PRE_CMD + item
-                print(CMD)
+                CMD = PRE_CMD + "\n" + item
+                # print(CMD)
+                process = subprocess.Popen('/bin/bash', stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+                out, err = process.communicate(CMD.encode('utf-8'))
+                # print(out.decode('utf-8'))
                 STAMP = datetime.now()
                 logFile = open(args.logfile, 'a+')
                 logFile.write(str(STAMP) + '\t' + CMD)
@@ -51,5 +55,6 @@ def executor():
 
     except Exception as e:
         logFile = open(args.logfile, 'a+')
-        logFile.write("Error occurred!!!!")
-        logFile.write(e)
+        logFile.write("Error occurred!!!!\n")
+        logFile.write(str(e)+'\n')
+        print(str(e))
