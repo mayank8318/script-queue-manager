@@ -7,9 +7,23 @@ from pathlib import Path
 
 import persistqueue
 import os
+import logging
+
 
 resource_package = __name__
 resource_path = 'prescripts.txt'
+
+
+def logStar():
+    logging.info('*' * 10)
+
+
+def logText(header, text):
+    logging.info(header + " - BEGIN")
+    text = text.split("\n")
+    for t in text:
+        logging.info(t)
+    logging.info(header + " - END")
 
 
 def executor():
@@ -37,24 +51,23 @@ def executor():
             PRE_CMD += l
 
     try:
+        logging.basicConfig(filename=args.logfile, filemode='a+', level=logging.INFO,
+                            format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
         while True:
             q = persistqueue.SQLiteQueue(os.path.join(home, 'script_queue'), auto_commit=True)
             if q.size > 0:
                 item = q.get()
                 CMD = PRE_CMD + "\n" + item
+                logStar()
+                logText("COMMAND", CMD)
                 # print(CMD)
                 process = subprocess.Popen('/bin/bash', stdin=subprocess.PIPE, stdout=subprocess.PIPE)
                 out, err = process.communicate(CMD.encode('utf-8'))
+                logText("OUTPUT", out.decode('utf-8'))
+                logStar()
                 # print(out.decode('utf-8'))
-                STAMP = datetime.now()
-                logFile = open(args.logfile, 'a+')
-                logFile.write(str(STAMP) + '\t' + CMD)
-                logFile.close()
             time.sleep(args.sleepTime)
             del q
 
     except Exception as e:
-        logFile = open(args.logfile, 'a+')
-        logFile.write("Error occurred!!!!\n")
-        logFile.write(str(e)+'\n')
-        print(str(e))
+        logging.info("Exception occurred", exc_info=True)
