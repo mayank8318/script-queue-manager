@@ -1,14 +1,12 @@
 import argparse
+import logging
+import os
 import pkgutil
 import subprocess
 import time
-from datetime import datetime
 from pathlib import Path
 
 import persistqueue
-import os
-import logging
-
 
 resource_package = __name__
 resource_path = 'prescripts.txt'

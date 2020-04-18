@@ -7,7 +7,7 @@ long_description = 'Simple CLI tool to manage script queue'
 
 setup(
     name='script_queue_manager',
-    version='1.0.0',
+    version='0.0.2',
     author='Mayank Vaidya',
     author_email='mayank8318@gmail.com',
     url='https://github.com/mayank8318/script-queue-manager',
