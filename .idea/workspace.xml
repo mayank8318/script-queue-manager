@@ -4,7 +4,6 @@
     <list default="true" id="50528aee-12a9-40ce-bf18-a049a81d1d57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script_queue_manager/executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/script_queue_manager/executor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script_queue_manager/pusher.py" beforeDir="false" afterPath="$PROJECT_DIR$/script_queue_manager/pusher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,7 @@
       <workItem from="1587027380456" duration="1558000" />
       <workItem from="1587028955159" duration="8443000" />
       <workItem from="1587113999936" duration="250000" />
-      <workItem from="1587190679621" duration="809000" />
+      <workItem from="1587190679621" duration="1850000" />
     </task>
     <servers />
   </component>

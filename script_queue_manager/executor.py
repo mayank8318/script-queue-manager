@@ -18,15 +18,22 @@ def executor():
 
     parser = argparse.ArgumentParser(prog='executor',
                                      description='Execute script tasks from the queue')
-    parser.add_argument('-p', '--pre_script', action='store', dest='prescript', default='./prescripts.txt')
+    parser.add_argument('-p', '--pre_script', action='store', dest='prescript', default=None)
     parser.add_argument('-l', '--log_file', action='store', dest='logfile', default=os.path.join(home, 'logs.txt'))
     parser.add_argument('-s', '--sleep_time', action='store', dest='sleepTime', default=15, type=int)
     args = parser.parse_args()
 
     prescriptFile = args.prescript
-    file = pkgutil.get_data(__name__, prescriptFile).decode()
 
-    PRE_CMD = file
+    if not prescriptFile:
+        prescriptFile = './prescripts.txt'
+        file = pkgutil.get_data(__name__, prescriptFile).decode()
+        PRE_CMD = file
+    else:
+        file = open(prescriptFile, 'r')
+        PRE_CMD = ''
+        for l in file:
+            PRE_CMD += l
 
     try:
         while True:
