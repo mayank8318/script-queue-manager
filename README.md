@@ -3,6 +3,13 @@
 A small suite of simple CLI tools to queue up scripts to be executed. A simple use case is that of having to repeatedly execute the same scripts with different parameters and each script takes hours to execute. (eg - I personally use it to queue my deep learning training tasks)
 
 ## Installing from pip
+
+### Stable release
+```shell script
+pip install script-queue-manager
+```
+
+### Development release
 ```shell script
 pip install -i https://test.pypi.org/simple/ script-queue-manager
 ```

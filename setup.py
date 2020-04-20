@@ -1,13 +1,15 @@
+import os
 from setuptools import setup, find_packages
 
 with open('requirements.txt') as f:
     requirements = f.readlines()
 
-long_description = 'Simple CLI tool to manage script queue'
+with open(os.path.join('.', 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='script_queue_manager',
-    version='0.0.2',
+    version='0.0.4',
     author='Mayank Vaidya',
     author_email='mayank8318@gmail.com',
     url='https://github.com/mayank8318/script-queue-manager',
